@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 project (Test Fortran C)
 
 # Da sistemare! #
-SET(FIND_PETSC /home/dante/CODE/jedbrown-cmake-modules-f103d9f)
+SET(FIND_PETSC /home/dante/CODE/FPETSc/jedbrown-cmake-modules-f103d9f)
 # -- #
 SET(CMAKE_MODULE_PATH ${FIND_PETSC} )
 FIND_PACKAGE(PETSc REQUIRED)
