@@ -1,0 +1,28 @@
+***
+Primo esemprio di utilizzo di PETSc: tutto il codice in un file .F
+
+- Nella cartella principale: c'e' il "Makefile" per compilare con make
+                             c'e' il "CMackelist.txt" per compilare con Cmake
+                             c'e' il programma fortran "ex1f.f"
+
+- CMakelist.txt: Serve a compilare l'esempio con Cmake
+                 Utilizza i tools "jedbrown" per includere le librerie di PETSc
+
+NOTE: - * Il file soregete fortran DEVE avere estensione ".F", * 
+        *  mettere ".f" darebbe errore!                        *
+        >> Aggiornamento: E' vero se si compila senza l'opzione "-fpp",
+                          cosi' facendo ifort non riconosce i comandi "#include".
+                          Se si vuole utilizzare indistintamente l'estensione
+                          ".f" o ".F" ricordarsi di dare l'ozione -fpp.          
+      
+      - La procedura di inclusione delle librerie di petsc e la
+        successiva dichiarazione delle variabili e' compatibile con
+        FORTRAN77 non con Fortran90 (da qui l'estensione del file ".F" o ".f"),
+        il codice restante invece e' in Fortran90.
+
+OK Sorgenti!!!
+OK Librerie!!!
+OK Make!!!
+OK Cmake!!!
+FUNZIONA!
+***

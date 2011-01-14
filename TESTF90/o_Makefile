@@ -1,0 +1,19 @@
+ALL:test
+
+# Variables and rules are included otherwise
+# the compilation of the .f90 or .F90 files does not work,
+# I don't know why! :(
+include ${PETSC_DIR}/conf/variables
+include ${PETSC_DIR}/conf/rules
+
+# The option -fpp is mandatory if you want to handle
+# file with extension ".F90" or ".f90", otherwise
+# only ".F90" files are allowed!
+# For some reason (what?) ${PETSC_FC_INCLUDES} must
+# be specify even if the rules are included
+FFLAGS = ${PETSC_FC_INCLUDES} -fpp
+
+# Linking the the local and the PETSc's libraries
+test: ex20f90.o  
+	ifort -o test ex20f90.o ${PETSC_VEC_LIB}
+

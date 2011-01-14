@@ -1,0 +1,17 @@
+***
+Secondo esemprio di utilizzo di PETSc: programma principale in un file e la 
+                                       subroutine per risolvere il sistema in un altro modulo
+
+- Nella cartella principale: c'e il "Makefile" per compilare con make
+                             c'e il "CMackelist.txt" per compilare con Cmake
+                             ci sono il programma fortran "main.f90" e il modulo
+                             "solv_lin_syst.f90"
+
+NOTE: - l'opzione -fpp e' stata usata
+
+OK Sorgenti!!!
+OK Librerie!!!
+OK Make (con rules)!!!
+OK Cmake!!!
+FUNZIONA!
+***

@@ -1,0 +1,24 @@
+***
+Primo esemprio di utilizzo di PETSc: tutto il codice in un file .F90
+
+- Nella cartella principale: c'e' il "Makefile" per compilare con make main.f90
+                             c'e' il "CMackelist.txt" per compilare con Cmake main.f90
+                             c'e' il "o_Makefile" per compilare con make ex20f90.F90
+                             ci sono i programmi fortran ex20f90.F90 e main.f90
+                             
+- ex20f90.F90: esempio di codice in cui sn usate delle librerie petscXXX90 con il
+               relativo formato fortran per la dichiarazione delle varibile
+               vedi http://www.mcs.anl.gov/petsc/petsc-as/snapshots/petsc-3.0.0/docs/manualpages/Sys/UsingFortran.html
+
+- main.f90: esempio di codice in cui sono usate le librerie classiche (senza 90) in un file f90
+            le variabili sono dichiarata nella maniera classica di FORTRAN77
+           
+NOTE : l'opzione -fpp e' stata usata per la compilazione
+
+OK Sorgenti!!!
+OK Librerie!!!
+OK Make (solo con rules)!!!
+OK Cmake!!!
+FUNZIONA!
+***       
+               
